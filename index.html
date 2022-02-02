@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="./root.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <title>Document</title>
+
+  <style>
+
+  </style>
+
+
+</head>
+
+<body>
+
+  <!-- nav bar -->
+  <nav class="navbar navbar-expand-md navbar-light mx-auto">
+    <!-- navbar-toggle-->
+    <label class="navbar-toggler" for="menu-toggler">
+      <span class="navbar-toggler-icon" style="width: 20px"></span>
+    </label>
+    <input type="checkbox" id="menu-toggler" class="d-none">
+    <ul id="collapse-menu">
+      <li class="nav-item"><a href="" class="nav-link active">Microsoft 365</a></li>
+      <li class="nav-item"><a href="" class="nav-link active">Office</a></li>
+      <li class="nav-item"><a href="" class="nav-link active">Windows</a></li>
+      <li class="nav-item"><a href="" class="nav-link active">Surface</a></li>
+      <li class="nav-item"><a href="" class="nav-link active">Xbox</a></li>
+      <li class="nav-item"><a href="" class="nav-link active">Sale</a></li>
+      <li class="nav-item"><a href="" class="nav-link active">Support</a></li>
+      <li class="nav-item"><a href="" class="nav-link active">Software</a></li>
+      <li class="nav-item"><a href="" class="nav-link active">PCs & Devices</a></li>
+      <li class="nav-item"><a href="" class="nav-link active">Entertainment</a></li>
+      <li class="nav-item"><a href="" class="nav-link active">Business</a></li>
+      <li class="nav-item"><a href="" class="nav-link active">Developer</a></li>
+      <li class="nav-item"><a href="" class="nav-link active">Other</a></li>
+      <li class="nav-item"><a href="" class="nav-link active">View Sitemap</a></li>
+    </ul>
+    <!-- navbar brand 2-->
+    <a class="navbar-brand" href="#">
+      <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31"
+        class="img-fluid nav-img" alt="logo">
+    </a>
+    <!-- navbar-nav normal screen -->
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Microsoft 365</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Office</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Windows</a>
+      </li>
+      <li class="nav-item hidden-900">
+        <a class="nav-link active" aria-current="page" href="#">Surface</a>
+      </li>
+      <li class="nav-item hidden-900">
+        <a class="nav-link active" aria-current="page" href="#">Xbox</a>
+      </li>
+      <li class="nav-item hidden-900">
+        <a class="nav-link active" aria-current="page" href="#">Sale</a>
+      </li>
+      <li class="nav-item hidden-900">
+        <a class="nav-link active" aria-current="page" href="#">Support</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a href="#" class="nav-link" id="navtoolDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          More
+          <i class="bi bi-chevron-down"></i>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navtoolDropdown" style="overflow-x: visible; padding:0">
+          <li><a href="" class="dropdown-item" style="overflow-x: visible">Xbox</a></li>
+          <li><a href="" class="dropdown-item" style="overflow-x: visible">Sales</a></li>
+          <li><a href="" class="dropdown-item" style="overflow-x: visible">Support</a></li>
+        </ul>
+      </li>
+    </ul>
+    <div class="d-flex">
+      <ul class="navtool-nav mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" id="navtoolDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            All Microsoft
+            <i class="bi bi-chevron-down"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navtoolDropdown">
+            <div class="dropdown-menu-block" style="overflow-x: visible;">
+              <ul class="dropdown-item">
+                <li class="s-title">Software</li>
+                <li class="s-link">Windows Apps</li>
+                <li class="s-link">OneDrive</li>
+                <li class="s-link">Outlook</li>
+                <li class="s-link">Skype</li>
+                <li class="s-link">OneNote</li>
+                <li class="s-link">Microsoft Teams</li>
+              </ul>
+              <ul class="dropdown-item">
+                <li class="s-title">PCs & Devices</li>
+                <li class="s-link">Shop Xbox</li>
+                <li class="s-link">Accessories</li>
+              </ul>
+              <ul class="dropdown-item">
+                <li class="s-title">Entertainment</li>
+                <li class="s-link">Xbox Game Pass Ultimate</li>
+                <li class="s-link">Xbox Live Gold</li>
+                <li class="s-link">Xbox games</li>
+                <li class="s-link">PC game</li>
+                <li class="s-link">Windows digital games</li>
+                <li class="s-link">Moves & TV</li>
+              </ul>
+              <ul class="dropdown-item">
+                <li class="s-title">Business</li>
+                <li class="s-link">Microsoft Cloud</li>
+                <li class="s-link">Microsoft Azure</li>
+                <li class="s-link">Microsoft Dynamics 365</li>
+                <li class="s-link">Microsoft 365</li>
+                <li class="s-link">Windows 365</li>
+                <li class="s-link">Microsoft Industry</li>
+                <li class="s-link">Microsoft Advertising</li>
+                <li class="s-link">Shop Business</li>
+              </ul>
+              <ul class="dropdown-item">
+                <li class="s-title">Developer & IT</li>
+                <li class="s-link">.NET</li>
+                <li class="s-link">Visual Studio</li>
+                <li class="s-link">Windows Server</li>
+                <li class="s-link">Windows Dev Center</li>
+                <li class="s-link">Docs</li>
+                <li class="s-link">Power Platform</li>
+                <li class="s-link">Power Apps</li>
+                <li class="s-link">HoloLens 2</li>
+              </ul>
+              <ul class="dropdown-item">
+                <li class="s-title">Other</li>
+                <li class="s-link">Microsoft Rewards</li>
+                <li class="s-link">Free downloads & security</li>
+                <li class="s-link">Education</li>
+                <li class="s-link">Gift cards</li>
+                <li class="s-link">Licensing</li>
+              </ul>
+            </div>
+            <div>
+              <hr class="dropdown-divider">
+            </div>
+            <div>
+              <a class="dropdown-item" href="#">
+                VIEW SITEMAP
+                <i class="bi bi-chevron-right"></i>
+              </a>
+            </div>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link search-button" href="#" id="search" role="button">
+            <span role="presentation" style="overflow-x: visible;">Search </span>
+            <i class="bi bi-search" style="font-size: 16px; margin-left: 2px;"></i>
+          </a>
+        </li>
+        <li class="nav-item cart-button">
+          <a class="nav-link" href="#" id="cart" role="button">
+            <span role="presentation" style="overflow-x: visible;">cart </span>
+            <i class="bi bi-cart3" style="font-size: 16px; margin-left: 2px;"></i>
+          </a>
+        </li>
+        <li class="nav-item signin-button">
+          <a class="nav-link" href="#" id="user" role="button">
+            <span role="presentation" style="overflow-x: visible;">sign in </span>
+          </a>
+          <img
+            src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' stroke='%23707070'%3E%3Cg class='mectrl_stroke' stroke-width='1.9' fill='none'%3E%3Ccircle cx='32' cy='32' r='30.25'/%3E%3Cg transform='matrix(1.1 0 0 1.1 8.8 5.61)'%3E%3Ccircle class='mectrl_stroke' cx='20' cy='16' r='7'/%3E%3Cpath class='mectrl_stroke' d='M30 35h10m-5-5v10M30.833 32.09A11 11 0 009 34'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"
+            style="width: 35px; margin-left: 4px;">
+        </li>
+      </ul>
+    </div>
+
+    </div>
+  </nav>
+
+  <main>
+    <!-- carousel2 -->
+    <section>
+      <div id="c-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#c-carousel" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#c-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <picture>
+              <source media="(min-width:1200px)"
+                srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWRafB?ver=369e&q=0&m=8&h=600&w=1600&b=%23FFFFFFFF&l=f&x=267&y=356&s=2549&d=956&aim=true">
+              <source media="(min-width:770px) and (max-width:1200px)"
+                srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWRafB?ver=369e&q=0&m=6&h=609&w=1083&b=%23FFFFFFFF&l=f&o=t&aim=true">
+              <source media="(min-width: 540px) and (max-width:770px)"
+                srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWRafB?ver=369e&q=0&m=8&h=431&w=767&b=%23FFFFFFFF&l=f&x=193&y=447&s=1454&d=817&aim=true">
+              <source media="(max-width:540px)"
+                srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWRafB?ver=369e&q=0&m=8&h=303&w=539&b=%23FFFFFFFF&l=f&x=216&y=431&s=1441&d=810&aim=true">
+              <img
+                src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWRafB?ver=369e&q=0&m=8&h=600&w=1600&b=%23FFFFFFFF&l=f&x=267&y=356&s=2549&d=956&aim=true"
+                class="img-fluid" alt="picture1600x600">
+            </picture>
+            <div class="c-carousel text-start">
+              <div>
+                <span>Back to school</span>
+                <h2>Save 10%</h2>
+                <div>
+                  <p>
+                    Do it all with a perfect balance of sleek, ultra-thin design,multitasking speed, all improved
+                    performance.
+                  </p>
+                </div>
+                <div class="c-group">
+                  <a href="" class="c-group-1a">
+                    Shop Surface Laptop 4
+                    <i class="bi bi-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <picture>
+              <source media="(min-width:1200px)"
+                srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWR6jE?ver=56e0&q=0&m=8&h=600&w=1600&b=%23FFFFFFFF&l=f&x=264&y=381&s=2508&d=940&aim=true">
+              <source media="(min-width:770px) and (max-width:1200px)"
+                srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWR6jE?ver=56e0&q=0&m=8&h=609&w=1083&b=%23FFFFFFFF&l=f&x=303&y=197&s=2498&d=1405&aim=true">
+              <source media="(min-width: 540px) and (max-width:770px)"
+                srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWR6jE?ver=56e0&q=0&m=8&h=431&w=767&b=%23FFFFFFFF&l=f&x=124&y=469&s=1527&d=858&aim=true">
+              <source media="(max-width:540px)"
+                srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWR6jE?ver=56e0&q=0&m=8&h=303&w=539&b=%23FFFFFFFF&l=f&x=154&y=446&s=1579&d=888&aim=true">
+              <img
+                src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWR6jE?ver=56e0&q=0&m=8&h=600&w=1600&b=%23FFFFFFFF&l=f&x=264&y=381&s=2508&d=940&aim=true"
+                class="img-fluid" alt="picture1600x600">
+              <div class="c-carousel text-start">
+                <div>
+                  <span>Back to school</span>
+                  <h2>Save 15%</h2>
+                  <div>
+                    <p>
+                      Get the style, performance, and all-day battery life you need, all at an exceptional value.
+                    </p>
+                  </div>
+                  <div class="c-group">
+                    <a href="" class="c-group-1a">
+                      Shop Surface Laptop Go
+                      <i class="bi bi-chevron-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </picture>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#c-carousel"
+            data-bs-slide="prev"></button>
+          <button class="carousel-control-next" type="button" data-bs-target="#c-carousel"
+            data-bs-slide="next"></button>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#c-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#c-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- icons -->
+    <section class="c-container pt">
+      <div class="wrap me-auto">
+        <div class="item">
+          <img
+            src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4sQDc?ver=30c2&q=90&m=6&h=40&w=40&b=%23FFFFFFFF&l=f&o=t&aim=true">
+          <div>Choose your Microsoft 365</div>
+        </div>
+        <div class="item">
+          <img
+            src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4pndL?ver=5217&q=90&m=6&h=40&w=40&b=%23FFFFFFFF&l=f&o=t&aim=true">
+          <div>Shop Serface devices</div>
+        </div>
+        <div class="item">
+          <img
+            src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4pxBu?ver=eae5&q=90&m=6&h=40&w=40&b=%23FFFFFFFF&l=f&o=t&aim=true">
+          <div>Buy Xbox games and consoles</div>
+        </div>
+        <div class="item">
+          <img
+            src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4sQDc?ver=30c2&q=90&m=6&h=40&w=40&b=%23FFFFFFFF&l=f&o=t&aim=true">
+          <div>Get Windows 11</div>
+        </div>
+        <div class="item">
+          <img
+            src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4rriw?ver=b2d5&q=90&m=6&h=40&w=40&b=%23FFFFFFFF&l=f&o=t&aim=true">
+          <div>Shop Business</div>
+        </div>
+        <div class="item">
+          <img
+            src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4CL19?ver=2af2&q=90&m=6&h=40&w=40&b=%23FFFFFFFF&l=f&o=t&aim=true">
+          <div>Shop for Students</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cards -->
+    <section class="c-container">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-xl-3 mt-5">
+          <img
+            src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWPGs4?ver=3a6f&q=90&m=6&h=201&w=358&b=%23FFFFFFFF&l=f&o=t&aim=true"
+            class="c-img" alt="row-img-1">
+          <h5 class="c-heading">Take charge in the new year with Microsoft 365</h5>
+          <div class="description">
+            <p>
+              Make this your best year yet with premium apps, 1 TB of cloud storage, advanced security and more.
+            </p>
+          </div>
+          <a href="#" class="c-button btn none">
+            Choose your Microsoft 365
+            <i class="bi bi-chevron-right"></i>
+          </a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-xl-3 mt-5">
+          <img
+            src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWKCA4?ver=df06&q=90&m=6&h=195&w=348&b=%23FFFFFFFF&l=f&o=t&aim=true"
+            class="c-img" alt="row-img-2">
+          <h5 class="c-heading">Surface Laptop 4</h5>
+          <div class="description">
+            <p>
+              Do it all with a perfect balance of sleek, ultra-thin design, multitasking speed and improved performance.
+            </p>
+          </div>
+          <a href="#" class="c-button btn none">
+            Shop now
+            <i class="bi bi-chevron-right"></i>
+          </a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-xl-3 mt-5">
+          <img
+            src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWRrhx?ver=8b9f&q=90&m=6&h=201&w=358&b=%23FFFFFFFF&l=f&o=t&aim=true"
+            class="c-img" alt="row-img-3">
+          <h5 class="c-heading">Claim victory with Xbox Series S</h5>
+          <div class="description">
+            <p>
+              Get the Xbox Series S – Fortnite & Rocket League Bundle. Go all-digital and enjoy add-on content,
+              featuring the Midnight Drive Pack, 1,000 V-Bucks, and 1,000 Rocket League credits.
+            </p>
+          </div>
+          <a href="#" class="c-button btn none">
+            Shop now
+            <i class="bi bi-chevron-right"></i>
+          </a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-xl-3 mt-5">
+          <img
+            src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4P80m?ver=316d&q=90&m=6&h=201&w=358&b=%23FFFFFFFF&l=f&o=t&x=1157&y=247&aim=true"
+            class="c-img" alt="row-img-4">
+          <h5 class="c-heading">Xbox Game Pass Ultimate</h5>
+          <div class="description">
+            <p>
+              Get your first month of membership for NZ$1.Play on the devices you own. Includes EA Play.Offer available
+              to new subscribers only.
+            </p>
+          </div>
+          <a href="#" class="c-button btn none">
+            Join now
+            <i class="bi bi-chevron-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- hero -->
+    <section class="picture pt">
+      <picture>
+        <source media="(min-width:1200px)"
+          srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4D5uF?ver=204a&q=0&m=8&h=600&w=1600&b=%23FFFFFFFF&l=f&x=0&y=200&s=2120&d=795&aim=true">
+        <source media="(min-width:770px) and (max-width:1200px)"
+          srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4D5uF?ver=204a&q=0&m=8&h=609&w=1083&b=%23FFFFFFFF&l=f&x=0&y=0&s=2104&d=1183&aim=true">
+        <source media="(max-width:770px)"
+          srcset="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4D5uF?ver=204a&q=0&m=8&h=431&w=767&b=%23FFFFFFFF&l=f&x=904&y=281&s=1216&d=683&aim=true">
+        <img
+          src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4D5uF?ver=204a&q=0&m=8&h=600&w=1600&b=%23FFFFFFFF&l=f&x=0&y=200&s=2120&d=795&aim=true"
+          class="img-fluid" alt="picture1600x600">
+      </picture>
+      <div class="c-hero text-start">
+        <div>
+          <h2>Never miss a beat</h2>
+          <div>
+            <p>
+              Discover the lastest audio from Surface, featuring ultra-confortable design, immersive sound and all-day
+              battery
+            </p>
+          </div>
+          <div class="c-group">
+            <a href="" class="c-group-1a">Shop Surface Earbuds <i class="bi bi-chevron-right"></i></a>
+            <a href="" class="c-group-2a">Shop Surface Headphones 2 <i class="bi bi-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cards 2 -->
+    <section class="c-container">
+      <h4 class="c-heading4">For business</h4>
+      <div class="row" style="margin-top: -48px;">
+        <div class="col-12 col-sm-6 col-xl-3 mt-5">
+          <img
+            src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWKtKJ?ver=2e57&q=90&m=6&h=201&w=358&b=%23FFFFFFFF&l=f&o=t&aim=true"
+            class="c-img" alt="row-img-1">
+          <h5 class="c-heading">Surface Pro 8 for Business</h5>
+          <div class="description">
+            <p>
+              Get unprecedented levels of performance and versatility on a 13-inch screen. Available with Windows 11.
+            </p>
+          </div>
+          <a href="#" class="c-button btn none">Shop now <i class="bi bi-chevron-right"></i></a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-xl-3 mt-5">
+          <img
+            src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWRDt7?ver=48fd&q=90&m=6&h=201&w=358&b=%23FFFFFFFF&l=f&o=t&aim=true"
+            class="c-img" alt="row-img-1">
+          <h5 class="c-heading">Great solutions for your school</h5>
+          <div class="description">
+            <p>
+              Accelerate the power of learning with inclusive, accessible and affordable Windows 11 and Windows 11 SE
+              devices for your K-12 school district and students.
+            </p>
+          </div>
+          <a href="#" class="c-button btn none">Learn more <i class="bi bi-chevron-right"></i></a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-xl-3 mt-5">
+          <img
+            src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4E4rT?ver=2072&q=90&m=6&h=201&w=358&b=%23FFFFFFFF&l=f&o=t&aim=true"
+            class="c-img" alt="row-img-3">
+          <h5 class="c-heading">Microsoft 365 for business</h5>
+          <div class="description">
+            <p>
+              Stay a step ahead with powerful apps for productivity, connection and security.
+            </p>
+          </div>
+          <a href="#" class="c-button btn none">Shop now <i class="bi bi-chevron-right"></i></a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-xl-3 mt-5">
+          <img
+            src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWLJ3u?ver=7dcf&q=90&m=6&h=201&w=358&b=%23FFFFFFFF&l=f&o=t&x=755&y=404&aim=true"
+            class="c-img" alt="row-img-4">
+          <h5 class="c-heading">Get Microsoft Teams for free</h5>
+          <div class="description">
+            <p>
+              Online meetings, chat and shared cloud storage – all in one place.
+            </p>
+          </div>
+          <a href="#" class="c-button btn none">Sign up for free <i class="bi bi-chevron-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- social media follow -->
+    <section class="c-container pt">
+      <div>
+        <ul class="list-group list-group-horizontal" style="align-items: center">
+          <li class="list-group-item">Follow Microsoft</li>
+          <li class="list-group-item"><img
+              src="https://www.microsoft.com/onerfstatics/marketingsites-eas-prod/_h/2532198d/coreui.statics/images/social/facebook.svg"
+              alt="facebook"></li>
+          <li class="list-group-item"><img
+              src="https://www.microsoft.com/onerfstatics/marketingsites-eas-prod/_h/6f40299c/coreui.statics/images/social/twitter.svg"
+              alt=""></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer>
+    <div class="row align-items-start">
+      <div class="footer-nav-item col-12 col-sm-4 col-xl-2">
+        <H6>What's new</H6>
+        <p>Surface Pro 8</p>
+        <p>Surface Laptop Studio</p>
+        <p>Surface Pro X</p>
+        <p>Surface Go 3</p>
+        <p>Surface Laptop 4</p>
+        <p>Microsoft 365</p>
+        <p>Windows 11 apps</p>
+        <p>HoloLens 2</p>
+      </div>
+      <div class="footer-nav-item col-12 col-sm-4 col-xl-2 ">
+        <H6>Microsoft Store</H6>
+        <p>Account profile</p>
+        <p>Download Center</p>
+        <p>Microsoft Store Support</p>
+        <p>Returns</p>
+        <p>Order tracking</p>
+        <p>Microsoft Store Promise</p>
+      </div>
+      <div class="footer-nav-item col-12 col-sm-4 col-xl-2">
+        <H6>Education</H6>
+        <p>Microsoft in education</p>
+        <p>Office for students</p>
+        <p>Office 365 for schools</p>
+        <p>Deals for students & parents</p>
+      </div>
+      <div class="footer-nav-item col-12 col-sm-4 col-xl-2">
+        <H6>Enterprise</H6>
+        <p>Microsoft Azure</p>
+        <p>Microsoft Industry</p>
+        <p>Microsoft partner resources</p>
+        <p>Financial services</p>
+      </div>
+      <div class="footer-nav-item col-12 col-sm-4 col-xl-2">
+        <H6>Developer</H6>
+        <p>Microsoft Visual Studio</p>
+        <p>Developer Center</p>
+        <p>Channel 9</p>
+        <p>Microsoft 365 Dev Center</p>
+        <p>Microsoft 365 Developer Program</p>
+      </div>
+      <div class="footer-nav-item col-12 col-sm-4 col-xl-2">
+        <H6>Company</H6>
+        <p>Careers</p>
+        <p>Company news</p>
+        <p>Privacy at Microsoft</p>
+        <p>Investors</p>
+      </div>
+    </div>
+    <div class="footer-botton-nav">
+      <p>English (New Zealand)</p>
+      <ul class="list-group list-group-horizontal" style="align-items: center">
+        <li class="list-group-item">Contact Microsoft</li>
+        <li class="list-group-item">Privact</li>
+        <li class="list-group-item">Term of use</li>
+        <li class="list-group-item">Trademarks</li>
+        <li class="list-group-item">About our ads</li>
+        <li class="list-group-item">© Microsoft 2022</li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
