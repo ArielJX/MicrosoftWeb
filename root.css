@@ -16,33 +16,10 @@ nav, main, footer .row{
   padding-right: 5%;
 }
 
-.c-img {
- width: 100%;
-}
-
-.c-heading {
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 600;
-  opacity: .95;
-  padding:1px 12px 2px 0;
-  margin: 37px 0 0 0;
-}
-
-.description {
-  padding: 2px 12px 0 0;
-}
-
-main p, main span {
-  display: block;
-  margin: 0;
-}
-
-.c-button {
-  padding: 10px 3px 7px 0;
-  color: #0067b8;
-  font-size: 15px;
-  font-weight: 600;
+.bibi span:hover {
+  text-decoration: underline;
+  margin-right: 4px;
+  transition: all 200ms ease-in-out;
 }
 
 main i {
@@ -148,14 +125,12 @@ word-break: break-word;
 .navtool-nav .dropdown-menu {
   background: #f6f6f6;
   position: absolute;
-  width: 1230px;
+  width: 80vw;
   white-space: nowrap;
-  max-width: none;
-  margin-left: -919.453px;
+  margin-left: -990px;
   border-color: rgba(0,0,0,0.05) rgba(0,0,0,0.05) #000;
   border-style: solid;
   border-width: 1px 1px 2px;
-  top: 100%;
   z-index: 700;
 }
 
@@ -167,7 +142,6 @@ word-break: break-word;
 }
 
 .dropdown-item{
-  min-width: 65px;
   width: 200px;
   font-size: 13px;
 }
