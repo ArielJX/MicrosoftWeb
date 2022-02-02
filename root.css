@@ -16,6 +16,35 @@ nav, main, footer .row{
   padding-right: 5%;
 }
 
+.c-img {
+ width: 100%;
+}
+
+.c-heading {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  opacity: .95;
+  padding:1px 12px 2px 0;
+  margin: 37px 0 0 0;
+}
+
+.description {
+  padding: 2px 12px 0 0;
+}
+
+main p, main span {
+  display: block;
+  margin: 0;
+}
+
+.c-button {
+  padding: 10px 3px 7px 0;
+  color: #0067b8;
+  font-size: 15px;
+  font-weight: 600;
+}
+
 main i {
   font-weight: 200;
 }
@@ -24,7 +53,7 @@ main i {
   padding-top: 48px;
 }
 
-/** nav **/
+/****************************** nav ****************/
 nav {
   font-size: 13px;
   line-height:20px;
@@ -45,9 +74,15 @@ ul {
   padding-inline-start: 0;
 }
 
+li {
+list-style: none;
+word-break: break-word;
+}
+
 #collapse-menu {
   display: none;
 }
+
 
 .nav-img {
   margin-top: -3px;
@@ -58,11 +93,6 @@ ul {
 .navbar-nav {
   margin-top: 1px;
   height: 54px;
-}
-
-li {
-list-style: none;
-word-break: break-word;
 }
 
 .navbar-nav .nav-link {
@@ -132,14 +162,16 @@ word-break: break-word;
 .navtool-nav .dropdown-menu-block {
   display: flex;
   flex-direction: row;
-  
+  flex-wrap: wrap;
+  max-width: none;
 }
 
 .dropdown-item{
-  min-width: 64px;
+  min-width: 65px;
   width: 200px;
   font-size: 13px;
 }
+
 .dropdown-item:hover {
   background: #f6f6f6;
 }
@@ -182,8 +214,38 @@ word-break: break-word;
   flex-direction: row;
 }
 
+/**** search ***/
+#search-box {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  z-index: 999;
+  background-color: white;
+}
+#search-box > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#search-box .navbar-brand {
+  margin-left: 80px;
+}
+#search-box input{
+  max-width: 1500px;
+}
+#cancel-button {
+  width: 75px;
+  height: 38px;
+  border: 1px solid #262626;
+  font-size: 15px;
+  background-color: #fff;
+  margin-right: 80px;
+}
 
-/** carousel **/
+
+/************************************* carousel ****************/
 .carousel-item {
   background: #e6e6e6;
   content: "";
@@ -215,11 +277,11 @@ word-break: break-word;
   transform: translateY(-50%);
 }
 
-.c-carousel span {
+.c-carousel .c-span {
   display: inline-block;
   background: #fef000;
   color: #000000;
-  padding: 3px 14px 5px 0;
+  padding: 3px 14px 5px;
   margin: 3px 0;
   font-size: 15px;
   height: 100%;
@@ -228,85 +290,7 @@ word-break: break-word;
   font-weight: 600;
 }
 
-/** hero **/
-.picture {
-  background: #e6e6e6;
-  content: "";
-  position: relative;
-  width: 100%;
-  margin-top: 48px;
-  padding: 0;
-}
-
-.c-hero {
-  width: 88%;
-  height: 100%;
-  max-width: 2048px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-h2 {
-  font-size: 34px;
-  font-weight: 600;
-}
-
-.c-hero>div {
-  position: absolute;
-  z-index: 1;
-  max-width: 520px;
-  top: 120px;
-  top: calc(50%);
-  transform: translateY(-50%);
-}
-
-.c-hero>div>div {
-  margin-top: 12px;
-}
-
-.c-group {
-  display: block;
-  position: relative;
-  margin-top: 12px;
-}
-
-.c-group a {
-  font-size: 15px;
-  padding: 8px 20px 8px 20px;
-  position: relative;
-  border: 2px solid transparent;
-  outline: 1px solid transparent;
-  outline-offset: -3px;
-  max-width: 100%;
-  display: inline-block;
-  overflow: hidden;
-  font-weight: 600;
-  text-align: center;
-  text-decoration: none;
-  letter-spacing: 0;
-  line-height: 1.3;
-  white-space: nowrap;
-  transition: all 200ms ease-in-out;
-  box-shadow: 0 4px 8px 0 transparent;
-  text-align: left!important;
-}
-
-.c-group-1a {
-  background: #000;
-  color: #fff;
-}
-
-.c-group-2a {
-  color: #000;
-}
-
-/** icons **/
+/****************************** icons ****************/
 .wrap {
   max-width: 100%;
   display: flex;
@@ -332,9 +316,74 @@ h2 {
   white-space: normal;
 }
 
+/****************************** hero ****************/
+.picture {
+  background: #e6e6e6;
+  content: "";
+  position: relative;
+  width: 100%;
+  margin-top: 48px;
+  padding: 0;
+}
+
+.c-hero {
+  width: 88%;
+  height: 100%;
+  max-width: 2048px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+h2 {
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.c-hero>div {
+  position: absolute;
+  z-index: 1;
+  max-width: 520px;
+  top: 120px;
+  top: calc(50%);
+  transform: translateY(-50%);
+}
+
+.c-group {
+  margin-top: 12px;
+}
+
+.c-group a {
+  font-size: 15px;
+  padding: 8px 20px 8px 20px;
+  outline-offset: -3px;
+  display: inline-block;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 4px 8px 0 transparent;
+  color: #fff;
+  background: #000;
+}
 
 
-/** cards **/
+.c-group span:hover{
+  color: white;
+  text-decoration: underline;
+  position: relative;
+  left: -4px;
+  top: -1px;
+  transition: all 200ms ease-in-out;
+  margin-right: 1px;
+}
+
+
+
+/************************************ cards  ****************/
 
 .c-img {
  width: 100%;
@@ -354,7 +403,7 @@ h2 {
 }
 
 main p, main span {
-  display: block;
+  display: inline-block;
   margin: 0;
 }
 
@@ -363,6 +412,10 @@ main p, main span {
   color: #0067b8;
   font-size: 15px;
   font-weight: 600;
+}
+
+.c-button:hover {
+  color: #0067b8;
 }
 
 .c-heading4 {
@@ -383,12 +436,17 @@ main .list-group-item {
   height: 28px;
 }
 
-/**  footer **/
+
+/**************************************  footer ****************/
 
 footer {
   background: #f2f2f2;
   margin-top: 48px;
   color: #616161;
+}
+
+.footer-nav-item{
+  padding-left: 0;
 }
 
 .footer-botton-nav {
@@ -399,16 +457,16 @@ footer {
   padding: 30px 5% 16px;
 }
 
+.footer-botton-nav .list-group {
+  margin-top: 10px;
+}
+
 .footer-botton-nav .list-group-item {
   background: none;
   padding: 0 24px 4px 0;
   font-size: 11px;
   color: #616161;
   border: none;
-}
-
-.footer-nav-item{
-  padding-left: 0;
 }
 
 footer h6 {
@@ -423,6 +481,7 @@ footer p {
   font-size: 11px;
   line-height: 15px;
   padding: 8px 0;
+  margin-bottom: 0;
 }
 
 @media only screen and (max-width: 1399px) {
@@ -436,7 +495,7 @@ footer p {
   #navtoolDropdown {
     margin-right: 25px;
   }
-
+  
   .navtool-nav .dropdown-menu {
   margin-left: -850px;
   }
@@ -450,7 +509,11 @@ footer p {
   .wrap {
     justify-content: start;
   }
-  
+
+  .navtool-nav .dropdown-menu {
+  margin-left: -700px;
+  }
+
 }
 
 @media only screen and (max-width: 1083px){
@@ -483,9 +546,8 @@ footer p {
   
 }
 
-
 @media only screen and (max-width: 905px){
-   .navbar-nav .dropdown {
+  .navbar-nav .dropdown {
     display: block;
   }
 
@@ -497,7 +559,6 @@ footer p {
   margin-left: -450px;
   }
 }
-
 
 
 @media only screen and (max-width: 880px) {
@@ -521,13 +582,13 @@ footer p {
 }
 
 @media only screen and (max-width: 770px) {
- nav {
+  nav {
     padding: 0;
     top: 0;
     left: 0;
     right: 0;
   }
-
+  
   .navbar-nav {
    display: none;
  }
@@ -536,7 +597,7 @@ footer p {
    display: none;
  }
 
-  .navbar-toggler {
+.navbar-toggler{
     display: inline-block;
     order: 0;
     position: absolute;
@@ -551,7 +612,7 @@ footer p {
 
   #menu-toggler:checked ~ #collapse-menu {
     display: block;
-    width: 100vw;
+    width: 100%;
     position: absolute;
     top: 100%;
     left: 0;
@@ -560,18 +621,16 @@ footer p {
     background: #f2f2f2;
   }
 
-  #menu-toggler .nav-item {
+  #collapse-menu .nav-item {
     height:52px;
     border: 1px solid #e6e6e6;
     vertical-align: middle;
   }
-
   #collapse-menu .nav-link {
     color: #262626;
     font-size: 15px;
     padding:14px 24px 15px 
 }
-
   .navtool-nav .nav-item .search-button {
     order: 1;
     flex: 1;
@@ -615,22 +674,9 @@ footer p {
   .signin-button>img {
     width: 31px;
   }
-}
 
-@media only screen and (max-width: 770px){
-  nav {
-    padding: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-  
-  .search-button {
-    display: inline-block;
-    position: absolute;
-    left: 1px;
-    padding: 8px 8px 8px 0;
-    margin-left: 2px;
+  .c-hero {
+    text-align: center;
   }
 
   .c-hero, .c-carousel {
@@ -677,18 +723,28 @@ footer p {
     white-space: nowrap;text-align: left;
   }
 
+  .c-heading { 
+    font-size: 18px;
+    margin-top: 12px;
+  }
+
+  .footer-botton-nav {
+    flex-direction: column;
+  }
+
   .footer-botton-nav .list-group {
     display: flex;
     flex-wrap: wrap;
   }
 
   .footer-botton-nav .list-group-item {
-    padding: 6px 4px 0 0;
+    padding: 6px 4px 0 6px;
   }
 }
 
 @media only screen and (max-width: 480px){
-.footer-botton-nav .list-group-item {
+  .footer-botton-nav .list-group-item {
     padding: 6px 10px 0 0;
   }
+
 }
