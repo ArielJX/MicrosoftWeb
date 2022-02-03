@@ -298,7 +298,7 @@ word-break: break-word;
   position: relative;
 }
 
-.wrap>div {
+.wrap-item {
   display: inline-block;
   width: 180px;
   height: 112px;
@@ -306,10 +306,19 @@ word-break: break-word;
   text-align: center;
 }
 
-.wrap>div>div{
-  margin: auto;
+.icon-text{
+  margin: 10px auto;
   width: 125px;
   white-space: normal;
+}
+
+.wrap-item:hover .icon-text, .wrap-item:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.icon-control-prev, .icon-control-next {
+  display: none;
 }
 
 
@@ -481,7 +490,7 @@ footer p {
   margin-bottom: 0;
 }
 
-footer p:hover {
+footer p:hover, footer li:hover {
   cursor: pointer;
   text-decoration: underline;
   color: #000;
@@ -544,17 +553,15 @@ footer p:hover {
   }
 
   .c-hero>div, .c-carousel>div {
-  max-width: 340px;
+    max-width: 340px;
   }
 
-  .wrap .carousel-control-prev, .wrap .carousel-control-next {
-  display: inline;
-  color: #dadada;
-  opacity: .8;
-  width: 5%;
+  .icon-control-prev, .icon-control-next {
+    display: inherit;
+  }
 }
   
-}
+
 
 @media only screen and (max-width: 905px){
   .navbar-nav .dropdown {
@@ -704,13 +711,37 @@ footer p:hover {
     margin: 0 auto;
     position: relative;
   }
+  .c-hero>div>div {
+    max-width: 100%;
+  }
 
   .c-carousel>div {
     text-align: center;
   }
 
-  .c-hero>div>div {
-    max-width: 100%;
+  .c-heading { 
+    font-size: 18px;
+    margin-top: 12px;
+  }
+
+  .footer-botton-nav {
+    flex-direction: column;
+  }
+
+  .footer-botton-nav .list-group {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-botton-nav .list-group-item {
+    padding: 6px 4px 0 6px;
+  }
+}
+
+@media only screen and (max-width: 700px){
+
+  .icon-control-prev, .icon-control-next {
+    display: none;
   }
 
   .wrap {
@@ -733,25 +764,10 @@ footer p:hover {
     white-space: nowrap;text-align: left;
   }
 
-  .c-heading { 
-    font-size: 18px;
-    margin-top: 12px;
-  }
+  
 
-  .footer-botton-nav {
-    flex-direction: column;
-  }
 
-  .footer-botton-nav .list-group {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .footer-botton-nav .list-group-item {
-    padding: 6px 4px 0 6px;
-  }
 }
-
 @media only screen and (max-width: 480px){
   .footer-botton-nav .list-group-item {
     padding: 6px 10px 0 0;
