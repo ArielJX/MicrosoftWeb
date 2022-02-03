@@ -30,6 +30,11 @@ main i {
   padding-top: 48px;
 }
 
+img:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
 /****************************** nav ****************/
 nav {
   font-size: 13px;
@@ -230,7 +235,7 @@ word-break: break-word;
 .c-carousel {
   width: 88%;
   height: 100%;
-  max-width: 2048px;
+  max-width: 1200px;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -264,6 +269,19 @@ word-break: break-word;
   font-weight: 600;
 }
 
+.carousel-control-prev, .carousel-control-next {
+  display: none;
+  color: #dadada;
+  opacity: .8;
+  width: 5%;
+}
+
+#c-carousel:hover .carousel-control-prev,#c-carousel:hover .carousel-control-next {
+  display: inline;
+  color: #dadada;
+  opacity: .8;
+}
+
 /****************************** icons ****************/
 .wrap {
   max-width: 100%;
@@ -274,6 +292,10 @@ word-break: break-word;
   font-weight: 600;
   font-size: 15px;
   margin: 0 auto;
+}
+
+#c-icon {
+  position: relative;
 }
 
 .wrap>div {
@@ -289,6 +311,7 @@ word-break: break-word;
   width: 125px;
   white-space: normal;
 }
+
 
 /****************************** hero ****************/
 .picture {
@@ -517,6 +540,13 @@ footer p {
   .c-hero>div, .c-carousel>div {
   max-width: 340px;
   }
+
+  .wrap .carousel-control-prev, .wrap .carousel-control-next {
+  display: inline;
+  color: #dadada;
+  opacity: .8;
+  width: 5%;
+}
   
 }
 
